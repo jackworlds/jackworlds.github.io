@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackworlds — Правила сервера</title>
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚔️</text></svg>">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Дополнительные стили для читаемого оформления документа */
+        .doc-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            background: #2a2e3a;
+            padding: 8px 24px;
+            border-radius: 40px;
+            color: white;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        .back-link:hover {
+            background: #3f4a6b;
+        }
+        .doc-card {
+            background: #151a24;
+            border-radius: 32px;
+            padding: 40px;
+            border-left: 6px solid #facc15;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.3);
+        }
+        .doc-card h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #facc15;
+        }
+        .doc-card .last-updated {
+            font-size: 0.8rem;
+            color: #9ca3af;
+            margin-bottom: 30px;
+            border-bottom: 1px dashed #2a3548;
+            padding-bottom: 10px;
+        }
+        .rules-section {
+            margin-bottom: 32px;
+        }
+        .rules-section h2 {
+            font-size: 1.6rem;
+            margin: 24px 0 16px 0;
+            border-left: 4px solid #facc15;
+            padding-left: 16px;
+        }
+        .rules-section h3 {
+            font-size: 1.2rem;
+            margin: 20px 0 12px 0;
+            color: #cbd5ff;
+            font-weight: 600;
+        }
+        .rule-item {
+            margin-bottom: 16px;
+            line-height: 1.5;
+        }
+        .rule-number {
+            font-weight: 700;
+            color: #facc15;
+            display: inline-block;
+            margin-right: 8px;
+        }
+        .subrule {
+            margin-left: 24px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        .punishment {
+            background: #1e1f2b;
+            border-left: 3px solid #ef4444;
+            padding: 8px 16px;
+            margin: 10px 0 10px 24px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+            color: #facc15;
+        }
+        .punishment::before {
+            content: "⚖️ Наказание: ";
+            color: #ef4444;
+            font-weight: 600;
+        }
+        .note {
+            background: #0f111a;
+            padding: 12px 20px;
+            border-radius: 16px;
+            font-style: italic;
+            margin: 20px 0;
+            border-left: 3px solid #3b82f6;
+        }
+        hr {
+            border-color: #2a3548;
+            margin: 20px 0;
+        }
+        @media (max-width: 700px) {
+            .doc-card {
+                padding: 20px;
+            }
+            .doc-card h1 {
+                font-size: 1.8rem;
+            }
+            .rules-section h2 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo"><span class="logo-icon">⚔️</span><span class="logo-text">Jackworlds</span><span class="logo-version">1.18.2</span></div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../laws.html">Законы</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle" id="mobileToggle">☰</div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container doc-container">
+            <a href="../laws.html" class="back-link">← Назад к списку законов</a>
+            <div class="doc-card">
+                <h1>📜 Правила сервера</h1>
+                <div class="last-updated">Актуальная версия: 1.0 | Последнее изменение: 26.04.2026</div>
+
+                <!-- 1. Общее положение -->
+                <div class="rules-section">
+                    <h2>1. Общее положение правил майнкрафт сервера Jackworlds</h2>
+                    <div class="rule-item"><span class="rule-number">1.1</span> Правила сервера обязательны для соблюдения всеми его игроками без исключительно.</div>
+                    <div class="rule-item"><span class="rule-number">1.2</span> За каждое нарушение правил сервера игрок может понести наказание, предусмотренное под пунктом, в зависимости от тяжести нарушения.</div>
+                    <div class="rule-item"><span class="rule-number">1.3</span> Наказание за нарушение правил сервера может выдать только администрация сервера.</div>
+                    <div class="rule-item"><span class="rule-number">1.4</span> При многократном (2 и более) нарушении одного и того же пункта правил сервера администрация вправе ужесточать наказание.</div>
+                    <div class="rule-item"><span class="rule-number">1.5</span> Незнание правил сервера не освобождает от ответственности.</div>
+                    <div class="rule-item"><span class="rule-number">1.6</span> Правила сервера могут быть изменены в любой момент. Изменения вступают в силу с момента их публикации на сайте проекта.</div>
+                </div>
+
+                <!-- 2. Виды наказаний -->
+                <div class="rules-section">
+                    <h2>2. Виды наказаний за нарушение правил сервера</h2>
+                    <div class="rule-item"><span class="rule-number">2.1</span> Блокировка IP адреса игрока. Доступ на сервер будет запрещён с конкретного IP.</div>
+                    <div class="rule-item"><span class="rule-number">2.2</span> Блокировка аккаунта навсегда. Доступ на сервер будет запрещён игроку с конкретным никнеймом, если наказание выдано справедливо.</div>
+                    <div class="subrule"><span class="rule-number">2.2.1</span> Блокировка аккаунта на определённый срок. Доступ на сервер будет запрещён на определённый срок, если наказание выдано справедливо.</div>
+                    <div class="rule-item"><span class="rule-number">2.3</span> Блокировка игрового чата на определённый срок. Доступ к написанию любых сообщений в чат (кроме игровых команд) игроку будет запрещён на определённый срок.</div>
+                    <div class="rule-item"><span class="rule-number">2.4</span> Деморган на определённый срок. Игровой персонаж будет перемещён в деморган (игровую тюрьму) на определённый срок.</div>
+                    <div class="rule-item"><span class="rule-number">2.5</span> Варн. Варны (предупреждения) суммируются за всё время. При получении 3-х варнов игрок получает наказание 2.1–2.4 настоящих правил, исходя из тяжести нарушения.</div>
+                    <div class="rule-item"><span class="rule-number">2.6</span> Наказание за нарушение правил сервера, не прописанное в пункте 2 настоящих правил, недопустимо.</div>
+                </div>
+
+                <!-- 3. Запрещено -->
+                <div class="rules-section">
+                    <h2>3. На сервере запрещено следующее</h2>
+                    
+                    <div class="rule-item"><span class="rule-number">3.1</span> Использование стороннего ПО, дающего игроку преимущество в игровом процессе.</div>
+                    <div class="punishment">Блокировка аккаунта на 30 дней. При повторном нарушении — блокировка аккаунта навсегда.</div>
+                    
+                    <div class="subrule"><span class="rule-number">3.1.1</span> Использование стороннего ПО, создающее помехи в работе сервера, либо в его производительности.</div>
+                    <div class="punishment">Блокировка аккаунта навсегда.</div>
+                    
+                    <div class="subrule"><span class="rule-number">3.1.2</span> Использование стороннего ПО, мешающего игровому процессу других игроков сервера.</div>
+                    <div class="punishment">Блокировка аккаунта навсегда.</div>
+                    
+                    <div class="subrule"><span class="rule-number">3.1.3</span> Бот.</div>
+                    <div class="punishment">Блокировка аккаунта навсегда.</div>
+                    
+                    <div class="rule-item"><span class="rule-number">3.2</span> Обход блокировки аккаунта (дополнить).</div>
+                    <div class="punishment">Блокировка IP адреса игрока.</div>
+                    
+                    <div class="rule-item"><span class="rule-number">3.3</span> Выдача себя за члена администрации проекта, не входя в состав администрации проекта.</div>
+                    <div class="punishment">Блокировка аккаунта на 10 дней.</div>
+                    
+                    <div class="rule-item"><span class="rule-number">3.4</span> Затрагивание политических/религиозных тем (за исключением внутриигровой политики).</div>
+                    <div class="punishment">Блокировка аккаунта на 10 дней.</div>
+                    
+                    <div class="rule-item"><span class="rule-number">3.5</span> Угроза (либо запугивание) игроку в любом виде, не относящаяся к игровому процессу.</div>
+                    <div class="punishment">Блокировка аккаунта на 15 дней.</div>
+                    
+                    <div class="rule-item"><span class="rule-number">3.6</span> Создание токсичной атмосферы на проекте.</div>
+                    <div class="punishment">Варн // Блокировка аккаунта на 5 дней.</div>
+                    
+                    <div class="rule-item"><span class="rule-number">3.7</span> Упоминание родных игрока в любом негативном виде.</div>
+                    <div class="punishment">Блокировка аккаунта на 5 дней.</div>
+                    
+                    <div class="rule-item"><span class="rule-number">3.8</span> Оскорбление игрока.</div>
+                    <div class="punishment">Варн // Блокировка игрового чата на 30–60 минут.</div>
+                    
+                    <div class="rule-item"><span class="rule-number">3.9</span> Оскорбление проекта (за исключением здравой критики).</div>
+                    <div class="punishment">Варн // Блокировка аккаунта на 5 дней.</div>
+                    
+                    <div class="rule-item"><span class="rule-number">3.10</span> Помеха работе администрации проекта.</div>
+                    <div class="punishment">Варн // Деморган на 60 минут.</div>
+                    
+                    <div class="rule-item"><span class="rule-number">3.11</span> Обман игрока на его деньги (не игровые), аккаунт, персональные данные.</div>
+                    <div class="punishment">Блокировка аккаунта навсегда.</div>
+                    
+                    <div class="rule-item"><span class="rule-number">3.12</span> Продажа/передача игрового аккаунта другому человеку.</div>
+                    <div class="punishment">Блокировка игрового аккаунта навсегда.</div>
+                    
+                    <div class="rule-item"><span class="rule-number">3.13</span> Многократное убийство одного и того же игрока без причины (причина по типу "я так хочу" не является весомой, однако если игрок сам постоянно пристаёт и вы его убиваете, то такая причина весомой вполне является).</div>
+                    <div class="punishment">Варн // Деморган на 60 минут.</div>
+                </div>
+
+                <!-- 4. Гарантии -->
+                <div class="rules-section">
+                    <h2>4. Некоторые гарантии от администрации проекта</h2>
+                    <div class="rule-item"><span class="rule-number">4.1</span> В случае, если будет доказано гриферство заприваченного игрового региона, администрация постарается в кратчайшие сроки выплатить компенсацию создателю региона в игровой валюте. Гриферство считается только в том случае, если игрок, загриферивший территорию, не состоял в данном регионе.</div>
+                    <div class="rule-item"><span class="rule-number">4.2</span> В случае, если по какой-то причине администрация выдала игроку некорректное наказание и игрок это оспорил, ему будет выплачена компенсация в виде игровой валюты, а также незамедлительная смена наказания на меньший срок (если возможно), либо обнуление наказания.</div>
+                </div>
+
+                <!-- 5. Дополнение -->
+                <div class="rules-section">
+                    <h2>5. Дополнение</h2>
+                    <div class="rule-item"><span class="rule-number">5.1</span> Сервер не является отсылкой на политическую деятельность в мире. Главы игровых миров, а также их игроки не должны делать какие-либо отсылки на реальную политику в рамках сервера. В таких случаях игрок будет считаться нарушителем п. 3.4 настоящих правил.</div>
+                </div>
+
+                <hr>
+                <div class="note">📌 Правила вступают в силу с момента их публикации. Администрация оставляет за собой право трактовать пункты правил в соответствии со здравым смыслом и целями сохранения комфортной игровой атмосферы.</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Jackworlds — некоммерческий проект. Minecraft 1.18.2.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

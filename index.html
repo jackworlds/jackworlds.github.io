@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Jackworlds — межмировой сервер в майнкрафте</title>
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚔️</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-icon">⚔️</span>
+                <span class="logo-text">Jackworlds</span>
+                <span class="logo-version">1.18.2</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#worlds">Миры</a></li>
+                    <li><a href="index.html#factions">Фракции</a></li>
+                    <li><a href="index.html#laws">Законы</a></li>
+                    <li><a href="index.html#staff">Должности</a></li>
+                    <li><a href="laws.html">📜 Законы</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle" id="mobileToggle">☰</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1>Выбирай <span class="color-blue">цвет</span>.<br>Управляй миром.<br>Врывайся в топы.</h1>
+                <p class="hero-description">
+                    Три мира, один общий хаб и полная свобода действий: законы, выборы, аннексии и фракции. 
+                    На Jackworlds ты не просто играешь — ты строишь политику и историю сервера. 
+                    Присоединяйся к одному из цветовых миров и докажи, кто достоин верховенства!
+                </p>
+                <div class="ip-block">
+                    <div class="ip-box secret-ip" id="ipBox">
+                        <span id="ipSecret" class="blurred-ip">🔒 IP-адрес засекречен</span>
+                    </div>
+                    <p class="ip-hint">· Будет раскрыт перед запуском ·</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="worlds" class="section">
+            <div class="container">
+                <h2 class="section-title">🌍 Миры</h2>
+                <div class="cards-grid">
+                    <div class="card card-common">
+                        <h3>🌐 Общий мир</h3>
+                        <p>Центр торговли, фракций и политики. Доступен всем игрокам вне зависимости от цветового мира.</p>
+                        <div class="tags"><span>Правительство</span><span>Полиция</span><span>Армия</span><span>СМИ</span></div>
+                    </div>
+                    <div class="card card-blue">
+                        <h3>💙 Blue World</h3>
+                        <p>Цветовой мир, где политика, экономика и культура полностью зависят от его жителей и главы. Никаких предопределённых ролей — только ваш выбор.</p>
+                        <div class="tags"><span>Свобода развития</span></div>
+                    </div>
+                    <div class="card card-green">
+                        <h3>💚 Green World</h3>
+                        <p>Цветовой мир, где политика, экономика и культура полностью зависят от его жителей и главы. Никаких предопределённых ролей — только ваш выбор.</p>
+                        <div class="tags"><span>Свобода развития</span></div>
+                    </div>
+                    <div class="card card-red">
+                        <h3>❤️ Red World</h3>
+                        <p>Цветовой мир, где политика, экономика и культура полностью зависят от его жителей и главы. Никаких предопределённых ролей — только ваш выбор.</p>
+                        <div class="tags"><span>Свобода развития</span></div>
+                    </div>
+                </div>
+                <div class="world-note">
+                    <p>⚡ Аннексии: <strong>частичная (смена главы мира)</strong> и <strong>полная (обнуление мира)</strong>.<br>
+                    Доступ в цветовой мир есть только у его жителей, министра этого ЦМ и Главы ОМ.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="factions" class="section alt-bg">
+            <div class="container">
+                <h2 class="section-title">⚔️ Фракции общего мира</h2>
+                <div class="factions-grid">
+                    <div class="faction-card">
+                        <div class="faction-icon">🏛️</div>
+                        <h3>Правительство</h3>
+                        <p>Внутренние и внешние дела ОМ.</p>
+                    </div>
+                    <div class="faction-card">
+                        <div class="faction-icon">👮</div>
+                        <h3>Полиция</h3>
+                        <p>Порядок в общем мире. Следят за соблюдением законов ОМ и межмировых законов.</p>
+                    </div>
+                    <div class="faction-card">
+                        <div class="faction-icon">⚔️</div>
+                        <h3>Армия</h3>
+                        <p>Защита общего мира. Выдача военных билетов, подготовка солдат.</p>
+                    </div>
+                    <div class="faction-card">
+                        <div class="faction-icon">📺</div>
+                        <h3>СМИ</h3>
+                        <p>Новости всех миров, объявления игроков за плату. Голос сервера.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="laws" class="section">
+            <div class="container">
+                <h2 class="section-title">📜 Законодательство</h2>
+                <div class="laws-grid">
+                    <div class="law-card law-mw">
+                        <h3>🌌 Межмировой закон (МЗ)</h3>
+                        <p>Действует во всех мирах. <strong>ЕМЗ</strong> — единый межмировой закон, высшая норма.</p>
+                    </div>
+                    <div class="law-card law-om">
+                        <h3>🏙️ Закон общего мира (ЗОМ)</h3>
+                        <p>Только для Общего мира. Принимается правительством и депутатами.</p>
+                    </div>
+                    <div class="law-card law-cm">
+                        <h3>🎨 Закон цветового мира (ЗЦМ)</h3>
+                        <p>Индивидуальные законы внутри Red / Green / Blue. Глава ЦМ может их менять.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="staff" class="section alt-bg">
+            <div class="container">
+                <h2 class="section-title">👑 Ключевые должности</h2>
+                <div class="staff-columns">
+                    <div class="staff-group">
+                        <h3>Общий мир</h3>
+                        <ul>
+                            <li><strong>Глава ОМ</strong> – главный руководитель</li>
+                            <li><strong>2 Заместителя</strong> – помощь главе</li>
+                            <li><strong>Министры</strong> – по одному на каждый ЦМ (послы)</li>
+                            <li><strong>Депутаты</strong> – улучшение законов</li>
+                            <li><strong>Прокурор</strong> – надзор за фракциями и заявлениями</li>
+                            <li><strong>Адвокат</strong> – защита обвиняемых (кроме нарушителей правил)</li>
+                        </ul>
+                    </div>
+                    <div class="staff-group">
+                        <h3>Цветовой мир</h3>
+                        <ul>
+                            <li><strong>Глава ЦМ</strong> – развивает мир, меняет законы</li>
+                            <li><strong>2 Заместителя главы</strong> – помогают управлять</li>
+                            <li><strong>Жители</strong> – могут влиять на идеологию после аннексии</li>
+                        </ul>
+                    </div>
+                    <div class="staff-group">
+                        <h3>Администрация сервера</h3>
+                        <ul>
+                            <li><strong>Хелперы / Администраторы</strong> – помощь игрокам</li>
+                            <li><strong>Кураторы</strong> – следят за мирами и фракциями</li>
+                            <li><strong>Старшая администрация</strong> (Основатель, ГА, ЗГА)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Готов стать частью истории?</h2>
+                <p>Выбирай цвет, вливайся в политику и выстраивай свою цепочку развития.</p>
+                <div class="ip-block small-ip">
+                    <div class="ip-box secret-ip">
+                        <span>🔒 IP скрыт до запуска</span>
+                    </div>
+                </div>
+                <p class="vk-link">📢 Наша группа ВКонтакте: <a href="https://vk.com/jackworlds" target="_blank" rel="noopener noreferrer">https://vk.com/jackworlds</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Jackworlds — некоммерческий проект. Minecraft 1.18.2.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

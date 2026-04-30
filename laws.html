@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚔️</text></svg>">
+    <title>Jackworlds — Законодательная база</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <style>
+        .laws-container { max-width: 1000px; margin: 0 auto; }
+        .laws-category { margin-bottom: 48px; }
+        .laws-category h2 { font-size: 1.8rem; border-left: 5px solid #b77cf0; padding-left: 20px; margin-bottom: 24px; margin-top: 20px; }
+        .laws-grid-custom { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
+        .law-btn { display: block; background: #151e2c; border-radius: 20px; padding: 18px 16px; text-align: center; font-weight: 600; color: #e0e4f0; text-decoration: none; transition: all 0.2s ease; border: 1px solid #2a3548; }
+        .law-btn:hover { transform: translateY(-3px); background: #1e2a3a; border-color: #b77cf0; color: white; }
+        .law-btn small { display: block; font-size: 0.7rem; font-weight: normal; color: #9ca3af; margin-top: 6px; }
+        .back-link { display: inline-block; margin: 20px 0 40px; background: #2a2e3a; padding: 8px 24px; border-radius: 40px; color: white; text-decoration: none; transition: 0.2s; }
+        .back-link:hover { background: #9653e4; }
+        @media (max-width: 700px) { .laws-grid-custom { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo"><span class="logo-icon">⚔️</span><span class="logo-text">Jackworlds</span><span class="logo-version">1.18.2</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="index.html#worlds">Миры</a></li>
+                    <li><a href="index.html#factions">Фракции</a></li>
+                    <li><a href="index.html#laws">Законы</a></li>
+                    <li><a href="index.html#staff">Должности</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle" id="mobileToggle">☰</div>
+        </div>
+    </header>
+    <main>
+        <div class="container laws-container">
+            <a href="index.html" class="back-link">← Вернуться на главную</a>
+            <h1 style="font-size: 2.5rem; margin-bottom: 20px;">📚 Законодательная база</h1>
+            <p style="margin-bottom: 40px;">Все нормативные документы сервера «Jackworlds».</p>
+
+            <div class="laws-category">
+                <h2>⚖️ Основные правила</h2>
+                <div class="laws-grid-custom">
+                    <a href="laws/server-rules.html" class="law-btn">📜 Правила сервера <small>Обязательны для всех</small></a>
+                </div>
+            </div>
+
+            <div class="laws-category">
+                <h2>📌 Регламенты</h2>
+                <div class="laws-grid-custom">
+                    <a href="laws/admin-regulations.html" class="law-btn">👑 Регламент администрации</a>
+                    <a href="laws/world-leaders-regulations.html" class="law-btn">🌍 Регламент глав миров и их заместителей</a>
+                    <a href="laws/faction-leaders-regulations.html" class="law-btn">⚔️ Регламент лидеров фракций и их заместителей</a>
+                </div>
+            </div>
+
+            <div class="laws-category">
+                <h2>🌌 Межмировые законы (МЗ)</h2>
+                <div class="laws-grid-custom">
+                    <a href="laws/interworld-law-1.html" class="law-btn">⭐ Единый межмировой закон (МЗ №1)</a>
+                    <a href="laws/elections-law-2.html" class="law-btn">🗳️ Порядок выборов и референдумов (МЗ №2)</a>
+                    <a href="laws/annexation-law-3.html" class="law-btn">🏰 Аннексия (МЗ №3)</a>
+                    <a href="laws/war-law-4.html" class="law-btn">⚔️ Война цветовых миров (МЗ №4)</a>
+                </div>
+            </div>
+
+            <div class="laws-category">
+                <h2>🏙️ Законы миров</h2>
+                <div class="laws-grid-custom">
+                    <a href="laws/common-world-code.html" class="law-btn">📖 Кодекс общего мира (ЗОМ №1)</a>
+                    <a href="laws/blue-world-law.html" class="law-btn">💙 Закон ЦМ BLUE (ЗЦМ "BLUE")</a>
+                    <a href="laws/green-world-law.html" class="law-btn">💚 Закон ЦМ GREEN (ЗЦМ "GREEN")</a>
+                    <a href="laws/red-world-law.html" class="law-btn">❤️ Закон ЦМ RED (ЗЦМ "RED")</a>
+                </div>
+            </div>
+
+            <div class="laws-category">
+                <h2>🏛️ Уставы фракций ОМ</h2>
+                <div class="laws-grid-custom">
+                    <a href="laws/government-charter.html" class="law-btn">Правительство</a>
+                    <a href="laws/police-charter.html" class="law-btn">Полиция</a>
+                    <a href="laws/army-charter.html" class="law-btn">Армия</a>
+                    <a href="laws/media-charter.html" class="law-btn">СМИ</a>
+                </div>
+            </div>
+            <p style="margin: 50px 0 30px; text-align: center; opacity: 0.7;">Документы заполняются по мере готовности.</p>
+        </div>
+    </main>
+    <footer><div class="container"><p>Jackworlds — некоммерческий проект. Minecraft 1.18.2.</p></div></footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
