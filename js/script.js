@@ -17,3 +17,15 @@ navLinks.forEach(link => {
         }
     });
 });
+
+// Плавная прокрутка без изменения URL (адрес остаётся чистым)
+document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault(); // отменяем переход по ссылке
+        const targetId = this.getAttribute('href'); // например, "#worlds"
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+});
