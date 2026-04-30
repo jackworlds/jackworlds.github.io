@@ -18,14 +18,26 @@ navLinks.forEach(link => {
     });
 });
 
-// Плавная прокрутка без изменения URL (адрес остаётся чистым)
+// Плавная прокрутка для внутренних якорей (без изменения URL)
 document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-        e.preventDefault(); // отменяем переход по ссылке
-        const targetId = this.getAttribute('href'); // например, "#worlds"
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
             targetElement.scrollIntoView({ behavior: 'smooth' });
         }
     });
 });
+
+// Плавная прокрутка наверх для ссылки "Главная" (href="/")
+const homeLink = document.querySelector('nav a[href="/"]');
+if (homeLink) {
+    homeLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        if (window.location.hash) {
+            history.pushState(null, null, '/');
+        }
+    });
+}
