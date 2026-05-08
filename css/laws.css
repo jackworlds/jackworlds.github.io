@@ -1,0 +1,122 @@
+/* Общие стили для страниц законов и уставов */
+
+.doc-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 30px;
+    background: #2a2e3a;
+    padding: 8px 24px;
+    border-radius: 40px;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.back-link:hover {
+    background: #3f4a6b;
+}
+
+.doc-card {
+    background: #151a24;
+    border-radius: 32px;
+    padding: 40px;
+    border-left: 6px solid #facc15;
+    box-shadow: 0 10px 25px -5px rgba(0,0,0,0.3);
+}
+
+.doc-card h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #facc15;
+}
+
+.doc-card .last-updated {
+    font-size: 0.8rem;
+    color: #9ca3af;
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #2a3548;
+    padding-bottom: 10px;
+}
+
+.rules-section {
+    margin-bottom: 32px;
+}
+
+.rules-section h2 {
+    font-size: 1.6rem;
+    margin: 24px 0 16px 0;
+    border-left: 4px solid #facc15;
+    padding-left: 16px;
+}
+
+.rules-section h3 {
+    font-size: 1.2rem;
+    margin: 20px 0 12px 0;
+    color: #cbd5ff;
+    font-weight: 600;
+}
+
+.rule-item {
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.rule-number {
+    font-weight: 700;
+    color: #facc15;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.subrule {
+    margin-left: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.punishment {
+    background: #1e1f2b;
+    border-left: 3px solid #ef4444;
+    padding: 8px 16px;
+    margin: 10px 0 10px 0;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    color: #facc15;
+}
+
+.punishment::before {
+    content: "⚖️ Наказание: ";
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.note {
+    background: #0f111a;
+    padding: 12px 20px;
+    border-radius: 16px;
+    font-style: italic;
+    margin: 20px 0;
+    border-left: 3px solid #3b82f6;
+}
+
+hr {
+    border-color: #2a3548;
+    margin: 20px 0;
+}
+
+@media (max-width: 700px) {
+    .doc-card {
+        padding: 20px;
+    }
+    .doc-card h1 {
+        font-size: 1.8rem;
+    }
+    .rules-section h2 {
+        font-size: 1.3rem;
+    }
+}
