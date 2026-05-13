@@ -90,9 +90,7 @@ nav a:hover {
 /* Hero */
 .hero {
     position: relative;
-    background-image: url('https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?q=80&w=2070&auto=format');
-    background-size: cover;
-    background-position: center 30%;
+    background: linear-gradient(135deg, #0f0c1f, #1a1430, #0a0815);
     padding: 120px 0;
     text-align: center;
 }
@@ -118,7 +116,7 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-.color-blue { color: #3b82f6; }
+.color-purple { color: #b77cf0; }
 .color-green { color: #22c55e; }
 .color-red { color: #ef4444; }
 
